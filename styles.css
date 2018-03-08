@@ -1,0 +1,143 @@
+body {
+    text-align:center;
+}
+
+h1 {
+    font-family: Monoton;
+    font-size: 70px;
+    text-align: center;
+    margin: 0.2em;
+    margin-bottom: 1em;
+    color:#fff;
+    background: linear-gradient(to right, #0000ff -17%, #0099ff 100%);
+    letter-spacing: 10px;
+    border-radius : 10px;
+    -webkit-box-shadow: 6px 6px 20px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 20px -5px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 20px -5px rgba(0,0,0,0.75);
+}
+
+div.optionsBox{
+    display: inline-block;
+    width:30%;
+    float:left;
+    border-radius: 2px;
+    background: linear-gradient(to right, #66ccff 5%, #0099ff 100%);
+    padding:1.5%;
+    margin-left:1em;
+    -webkit-box-shadow: 9px 9px 10px -4px rgba(128,128,128,0.76);
+	-moz-box-shadow: 9px 9px 10px -4px rgba(128,128,128,0.76);
+	box-shadow: 9px 9px 10px -4px rgba(128,128,128,0.76);
+} 
+div.canvasBox{
+	width: 62%;
+	border: 2px solid #ddd;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	float: right;
+	background-color: #eee;
+	padding-left:1em;
+	visibility: hidden;
+	-webkit-box-shadow: 6px 6px 20px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 20px -5px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 20px -5px rgba(0,0,0,0.75);
+}
+div.visible{
+	visibility: visible;
+}
+div.pixelCanvasContainer{
+	width: 100%;
+	height: 1000px;
+	overflow-x: scroll;
+	overflow-y: scroll;
+	background-color: #fff;
+}
+div.optionsBox form{
+	font-size: 20px;
+	color:#fff;
+	font-weight: thin;
+	font-family: 'serif';
+}
+div.optionsBox form input[type=number]{
+	font-size:20px;
+	color:#000;
+	font-weight: thin;
+	font-family: 'Arial', 'serif';
+}
+div.optionsBox form input[type=submit]{
+	background: linear-gradient(to right, #66ccff 5%, #0099ff 100%);
+	color:#fff;
+	font-size:20px;
+	
+	font-weight: bold;
+	font-family: 'Arial', 'serif';
+	
+	margin-top: 2em;
+
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+div.optionsBox form input[type=submit]:hover{
+	color:#000;
+}
+
+div.canvasBox span#closeCanvas{
+	cursor: pointer;
+	user-select: none;
+	background-color: red;
+	color:white;
+	padding:0.2em;
+	padding-left:0.6em;
+	padding-right: 0.5em;
+	float:right;
+	margin-right:1em;
+	border: 1px solid red;
+	border-radius: 20px;
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(133,133,133,1);
+	-moz-box-shadow: 2px 2px 3px 0px rgba(133,133,133,1);
+	box-shadow: 2px 2px 3px 0px rgba(133,133,133,1);
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+    font-family: 'Arial','Ubuntu', 'serif';
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+h2.blue{
+	color:#008ff1;
+}
+
+table,
+tr,
+td {
+    border: 1px solid #ddd;
+    /* Cursor from http://www.cursors-4u.com */
+    cursor: url(http://cur.cursors-4u.net/others/oth-2/oth198.cur), progress !important;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    user-select: none;
+}
+
+tr {
+    height: 10px;
+}
+
+td {
+    width: 10px;
+}
+
+input[type=number] {
+    width: 6em;
+}
