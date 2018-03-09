@@ -6,8 +6,9 @@
 		$("form#sizePicker").submit(makeGrid);
 		getSelectedColor();
 		$('#colorPicker').on('change', getSelectedColor);
-		$('#pixelCanvas').on('mousedown','td',function(){
+		$('#pixelCanvas').on('mousedown','td',function(event){
 			pressed = true;
+			draw(event); // Also fill pixel when mouse is clicked on it
 		});
 		$('body').on('mouseup',function(){
 			pressed = false;
